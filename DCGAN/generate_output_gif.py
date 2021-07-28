@@ -3,7 +3,7 @@ from PIL import Image
 
 RESIZE_FACTOR = 0.4
 OUTPUT_FILENAME = 'Predictions.gif'
-DURATION_PER_FRAME = 150
+DURATION_PER_FRAME = 200
 
 output_images = glob.glob('Outputs/Pred_Epoch_*.png')
 output_images.sort()
