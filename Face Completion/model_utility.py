@@ -9,7 +9,7 @@ IMAGE_SIZE = (192, 160)
 LANDMARKS = ['lefteye', 'righteye', 'nose', 'leftmouth', 'rightmouth']
 
 class LandmarkCutoutImageIterator(Sequence):
-    def __init__(self, df, batch_size, step_count, max_cutouts = 2, min_cutout_size = 12, max_cutout_size = 16):
+    def __init__(self, df, batch_size, step_count, max_cutouts = 3, min_cutout_size = 12, max_cutout_size = 16):
         self.df = df
         self.batch_size = batch_size
         self.step_count = step_count
